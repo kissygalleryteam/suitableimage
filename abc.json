@@ -1,0 +1,17 @@
+{
+    "name": "suitableimage",
+    "comName":"Suitableimage",
+    "version": "1.0",
+    "desc": "",
+    "tag":"自适应图片",
+    "githubName":"ben304",
+    "author": {
+        "name": "筱谷",
+        "email": "xiaogu.gxb@taobao.com",
+        "page": ""
+    },
+	"flexComboPort":"81",
+	"reserveServerPort":"8080",
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}
