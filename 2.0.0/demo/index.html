@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Suitableimage的demo</title>
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.2/seed-min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="http://g.tbcdn.cn/kissy/k/1.3.0/css/dpl/base-min.css">
+    <style>
+    .wrap_a {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #333;
+    }
+    </style>
+<script>var S = KISSY;S.config({packages:[{name:"kg",path:"http://g.tbcdn.cn/kg/",charset:"utf-8",ignorePackageNameInUri:true}]});if (S.Config.debug){var srcPath = "../";S.config({packages:[{name:"kg/suitableimage/2.0.0",path:srcPath,charset:"utf-8",ignorePackageNameInUri:true}]});}</script></head>
+<body>
+<h2>Suitableimage的demo</h2>
+
+<div class="wrap_a">
+</div>
+
+<script>
+    var S = KISSY;
+    if (S.Config.debug) {
+        var srcPath = "../../";
+        S.config({
+            packages:[
+                {
+                    name:"kg/suitableimage",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+    S.use('kg/suitableimage/2.0.0/index', function (S, Suitableimage) {
+          new Suitableimage({
+            el : '.wrap_a',
+            image: 'http://img.la/400x300'
+          });
+    })
+</script>
+</body>
+</html>
